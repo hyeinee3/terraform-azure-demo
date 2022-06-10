@@ -14,3 +14,8 @@ variable "password" {
   description = "admin password"
 }
 
+variable "additional_tags" {
+  default = {}
+  description = "Additional Tags"
+}
+
