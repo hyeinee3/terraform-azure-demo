@@ -61,9 +61,11 @@ resource "azurerm_linux_virtual_machine" "main" {
     azurerm_network_interface.main.id,
     azurerm_network_interface.internal.id,
   ]
-  tags = {
+  tags = merge(var.additional_tags,
+    {
     SWQA = "DevOps"
-  }
+    }
+  )
   source_image_reference {
     publisher = "Canonical"
     offer     = "UbuntuServer"
