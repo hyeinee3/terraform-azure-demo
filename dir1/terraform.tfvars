@@ -4,5 +4,6 @@ username = "devos"
 password = "Pa55w0rd"
 additional_tags = {
   "CreatedBy" = "qahyein",
-  "Directory" = "dir1"
+  "Directory" = "dir1",
+  "swqa" = "DevOps"
 }
